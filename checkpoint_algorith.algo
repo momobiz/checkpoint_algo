@@ -1,0 +1,21 @@
+Algorithm readPhrase 
+var phrase: string
+var longueur, nbWord, nbVowel : integer :=0;
+
+debut  
+phrase:=read(phrase);
+longueur:=longueur(phrase);
+
+for(var i:=0; i<longueur-1;i++) then 
+nbWord:=nbVowel+1
+endfor
+var tab:=['a','e','i','o','u'];
+for (var i:0; i<longuer-1; i++) do 
+    for (var j:=0; j<tab.length;j++) do 
+        if(phrase[i]==tab[j]) do nbVowel++;
+        end if
+    endfor
+end for 
+return longueur, nbword, nbvowel
+fin 
+
